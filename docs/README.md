@@ -1,33 +1,24 @@
 ---
 home: true
-title: Home
-heroImage: https://vuejs.press/images/hero.png
-actions:
-  - text: Get Started
-    link: /get-started.html
-    type: primary
-
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
-    type: secondary
-
+modules:
+  - BannerBrand
+  - Features
+  - Footer
+bannerBrand:
+  bgImage: '/bg.svg'
+  title: 对世界保持一点好奇
+  description: 理解计算机，而不仅仅使用计算机。
+  tagline: 这里记录我对计算机体系结构、RISC-V、高性能处理器设计、Linux 系统软件以及工程实践的思考，同时也记录阅读、旅行与成长过程中产生的问题与答案。
+  buttons:
+    - { text: 开始阅读, link: '/posts' }
+    - { text: 浏览分类, link: '/categories/', type: plain }
+footer:
+  startYear: 2024
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
-
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
+  - title: 体系结构
+    details: 从指令集、微架构到片上系统，记录对计算机运行的理解。
+  - title: 系统工程
+    details: Linux、工具链与工程实践，关注软件如何落在真实硬件之上。
+  - title: 阅读思考
+    details: 记录阅读、实践与思考，帮助自己，也希望能帮到后来者。
 ---
-
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
-
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page

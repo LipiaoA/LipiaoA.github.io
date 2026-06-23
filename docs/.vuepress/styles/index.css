@@ -1,0 +1,194 @@
+.taxonomy-index {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.taxonomy-index__title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.taxonomy-index__desc {
+  margin: 0 0 2rem;
+  color: #64748b;
+}
+
+.taxonomy-index__empty {
+  color: #94a3b8;
+}
+
+/* 分类/标签汇总页：横向排列 */
+.categories-index .category-list,
+.tags-index .tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.categories-index .category-item,
+.tags-index .tag-item {
+  border: 1px solid rgba(93, 103, 232, 0.35);
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.categories-index .category-item:hover,
+.tags-index .tag-item:hover {
+  background: rgba(93, 103, 232, 0.9);
+  border-color: #5d67e8;
+}
+
+.categories-index .category-link,
+.tags-index .tag-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.875rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.categories-index .category-item:hover .category-link,
+.categories-index .category-item:hover .text,
+.categories-index .category-item:hover .num,
+.tags-index .tag-item:hover .tag-link,
+.tags-index .tag-item:hover .num {
+  color: #fff;
+}
+
+.categories-index .num,
+.tags-index .num {
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.375rem;
+  border-radius: 999px;
+  background: #5d67e8;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.tags-index .tag-item:hover .num {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* 分类/标签详情页（Reco 内置 Categories 布局）：统一横向排列 */
+.categories-container .category-list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.75rem 1rem !important;
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-bottom: 2rem !important;
+}
+
+.categories-container .category-item {
+  display: block !important;
+  margin: 0 !important;
+  float: none !important;
+}
+
+.categories-container .category-link {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+html.dark .taxonomy-index__desc {
+  color: #94a3b8;
+}
+
+/* 关于页：内容居中，避免左侧窄栏 + 右侧空目录 */
+.theme-container.about-page .page-catalog-container {
+  display: none !important;
+}
+
+.theme-container.about-page .page-container {
+  justify-content: center;
+}
+
+/* 关于页内容最大宽度：40rem≈640px | 48rem≈768px | 52rem≈832px | 64rem≈1024px | none=不限宽 */
+.theme-container.about-page .page-content {
+  flex: 1 1 auto;
+  max-width: 58rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.theme-container.about-page .about-prose {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: #334155;
+}
+
+html.dark .theme-container.about-page .about-prose {
+  color: #cbd5e1;
+}
+
+.theme-container.about-page .about-prose > p:first-child {
+  margin-top: 0;
+  font-size: 1.125rem;
+}
+
+.theme-container.about-page .about-prose h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(93, 103, 232, 0.2);
+  font-size: 1.25rem;
+}
+
+.theme-container.about-page .about-prose ul {
+  margin: 0.75rem 0 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.posts-container,
+.categories-container {
+  max-width: 58rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-container.about-page .about-prose li {
+  margin: 0.35rem 0;
+}
+
+.theme-container.about-page .about-prose blockquote {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid #5d67e8;
+  background: rgba(93, 103, 232, 0.06);
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+html.dark .theme-container.about-page .about-prose blockquote {
+  background: rgba(93, 103, 232, 0.12);
+}
+
+.theme-container.about-page .about-prose .about-links {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed rgba(93, 103, 232, 0.25);
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9375rem;
+}
+
+.theme-container.about-page .about-prose .about-links a {
+  text-decoration: none;
+}
+
+.theme-container.about-page .about-prose .about-links a:hover {
+  text-decoration: underline;
+}
