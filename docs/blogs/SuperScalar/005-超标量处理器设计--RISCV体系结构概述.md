@@ -6,7 +6,7 @@ tag:
   - 处理器
   - 流水线
 lang: zh-CN
-title: 总述-超标量
+title: RISCV体系结构
 description: 超标量处理器设计--总述
 ---
 
