@@ -1,4 +1,5 @@
 import { defineUserConfig } from 'vuepress'
+import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { recoTheme } from 'vuepress-theme-reco'
 import { viteBundler } from '@vuepress/bundler-vite'
 
@@ -16,8 +17,14 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
 
+  plugins: [
+    markdownMathPlugin({
+      type: 'katex',
+    }),
+  ],
+
   theme: recoTheme({
-    logo: '/logo.png',
+    logo: '/logo_n.png',
     author: 'Atlas Lip',
     colorMode: 'auto',
     autoSetBlogCategories: false,
